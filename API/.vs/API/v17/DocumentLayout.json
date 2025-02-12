@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Haight\\source\\repos\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\views\\product2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\views\\product2\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1824D191-A851-475C-81A1-747A4C7BEA56}|..\\MVC\\MVC.csproj|c:\\users\\haight\\source\\repos\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 98,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T09:09:18.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAADwv0EAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T09:05:53.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "..\\MVC\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T06:01:25.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Models\\Product.cs",
+              "RelativeToolTip": "..\\MVC\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T05:53:14.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Program.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Program.cs",
+              "RelativeToolTip": "..\\MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T05:58:46.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "..\\MVC\\Properties\\serviceDependencies.json",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "..\\MVC\\Properties\\serviceDependencies.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-11T06:25:25.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\appsettings.json",
+              "RelativeToolTip": "..\\MVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-11T05:49:31.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Services\\ProductService.cs",
+              "RelativeToolTip": "..\\MVC\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T05:54:39.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MVC",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\MVC.csproj",
+              "RelativeDocumentMoniker": "..\\MVC\\MVC.csproj",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\MVC.csproj",
+              "RelativeToolTip": "..\\MVC\\MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-11T05:54:02.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product2\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Product2\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product2\\Create.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Product2\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T06:37:31.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product2\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Product2\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Haight\\source\\repos\\MVC\\Views\\Product2\\Index.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Product2\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T06:36:43.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MVC.Models.Product>
+
+<h2>Products</h2>
+
+<a href="@Url.Action("Create", "Product")">Create New Product</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>
+                    <a href="@Url.Action("Details", "Product", new { id = product.ProductID })">Details</a> |
+                    <a href="@Url.Action("Edit", "Product", new { id = product.ProductID })">Edit</a> |
+                    <a href="@Url.Action("Delete", "Product", new { id = product.ProductID })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
