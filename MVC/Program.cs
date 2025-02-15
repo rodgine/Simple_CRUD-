@@ -11,6 +11,10 @@ builder.Services.AddDbContext<MVCContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ProductService>();
 
+// Register HttpClient with DI container
+builder.Services.AddHttpClient();
+builder.Services.AddTransient<DeveloperService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,0 +1,232 @@
+﻿@model IEnumerable<MVC.Models.Developer>
+
+@{
+    ViewData["Title"] = "Developers List";
+}
+
+<div class="container">
+    <h1>Developers</h1>
+
+    <!-- Add Developer Button -->
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
+        <i class="fa-solid fa-user-plus"></i> Add Developer
+    </button>
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Position</th>
+                <th>Contact</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var developer in Model)
+            {
+                <tr>
+                    <td>@developer.Name</td>
+                    <td>@developer.Age</td>
+                    <td>@developer.Position</td>
+                    <td>@developer.Contact</td>
+                    <td>
+                        <!-- View Button -->
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viewModal"
+                                data-id="@developer.Id" data-name="@developer.Name" data-age="@developer.Age"
+                                data-position="@developer.Position" data-contact="@developer.Contact">
+                            <i class="fa-solid fa-eye"></i> View
+                        </button>
+
+                        <!-- Edit Button -->
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal"
+                                data-id="@developer.Id" data-name="@developer.Name" data-age="@developer.Age"
+                                data-position="@developer.Position" data-contact="@developer.Contact">
+                            <i class="fa-solid fa-pen-to-square"></i> Edit
+                        </button>
+
+                        <!-- Delete Button -->
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                data-id="@developer.Id" data-name="@developer.Name">
+                            <i class="fa-solid fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createModalLabel">Create Developer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="Create" method="post">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="Age" name="Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Position" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="Position" name="Position" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Contact" class="form-label">Contact</label>
+                        <input type="text" class="form-control" id="Contact" name="Contact" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Create Developer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Developer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="Edit" method="post">
+                <div class="modal-body">
+                    <input type="hidden" id="EditId" name="Id">
+                    <div class="mb-3">
+                        <label for="EditName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="EditName" name="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="EditAge" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="EditAge" name="Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="EditPosition" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="EditPosition" name="Position" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="EditContact" class="form-label">Contact</label>
+                        <input type="text" class="form-control" id="EditContact" name="Contact" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-warning">Update Developer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- View Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewModalLabel">View Developer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Name:</strong> <span id="ViewName"></span></p>
+                <p><strong>Age:</strong> <span id="ViewAge"></span></p>
+                <p><strong>Position:</strong> <span id="ViewPosition"></span></p>
+                <p><strong>Contact:</strong> <span id="ViewContact"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete Developer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="Delete" method="post">
+                <div class="modal-body">
+                    <input type="hidden" id="DeleteId" name="Id">
+                    <p>Are you sure you want to delete the developer <strong id="DeleteName"></strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger">Delete Developer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for success message
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    title: 'Success',
+                    text: successMessage,
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            }
+
+            // Check for error message
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: errorMessage,
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            }
+        });
+
+        // Edit Modal
+        $('#editModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            $('#EditId').val(button.data('id'));
+            $('#EditName').val(button.data('name'));
+            $('#EditAge').val(button.data('age'));
+            $('#EditPosition').val(button.data('position'));
+            $('#EditContact').val(button.data('contact'));
+        });
+
+        // View Modal
+        $('#viewModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            $('#ViewName').text(button.data('name'));
+            $('#ViewAge').text(button.data('age'));
+            $('#ViewPosition').text(button.data('position'));
+            $('#ViewContact').text(button.data('contact'));
+        });
+
+        // Delete Modal
+        $('#deleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            $('#DeleteId').val(button.data('id'));
+            $('#DeleteName').text(button.data('name'));
+        });
+    </script>
+}

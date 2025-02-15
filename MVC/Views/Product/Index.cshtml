@@ -5,50 +5,58 @@
 }
 
 <div class="container mt-4">
-    <h1 class="display-4">Product List</h1>
-    <p class="lead">Manage your products here.</p>
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <a asp-action="Create" class="btn btn-success">
-            <i class="fas fa-plus-circle"></i> Create New
-        </a>
-        <div>
-            <input type="text" id="searchInput" class="form-control" placeholder="Search products..." />
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-box-open"></i> Product List</h4>
+            <a asp-action="Create" class="btn btn-light text-primary">
+                <i class="fas fa-plus-circle"></i> Add New Product
+            </a>
         </div>
-    </div>
 
-    <div class="table-responsive">
-        <table class="table table-striped table-hover">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">@Html.DisplayNameFor(model => model.Name)</th>
-                    <th scope="col">@Html.DisplayNameFor(model => model.Description)</th>
-                    <th scope="col">@Html.DisplayNameFor(model => model.Price)</th>
-                    <th scope="col" class="text-center">Actions</th>
-                </tr>
-            </thead>
-            <tbody id="productTableBody">
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Price)</td>
-                        <td class="text-center">
-                            <a asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-sm btn-warning">
-                                <i class="fas fa-edit"></i> Edit
-                            </a>
-                            <a asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-info">
-                                <i class="fas fa-info-circle"></i> Details
-                            </a>
-                            <a asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">
-                                <i class="fas fa-trash-alt"></i> Delete
-                            </a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+        <div class="card-body">
+            @* <p class="lead">Manage your products efficiently.</p> *@
+
+            <!-- Search Bar -->
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                <input type="text" id="searchInput" class="form-control" placeholder="Search products..." />
+            </div>
+
+            <!-- Product Table -->
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="bg-light">
+                        <tr>
+                            <th scope="col"><i class="fas fa-tag"></i> Name</th>
+                            <th scope="col"><i class="fas fa-align-left"></i> Description</th>
+                            <th scope="col"><i class="fas fa-dollar-sign"></i> Price</th>
+                            <th scope="col" class="text-center"><i class="fas fa-cogs"></i> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                                <td class="text-center">
+                                    <a asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-sm btn-warning">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-info">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -79,3 +87,6 @@
         });
     </script>
 }
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

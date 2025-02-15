@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ProductAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/products")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
@@ -78,7 +78,7 @@ namespace ProductAPI.Controllers
         }
 
         // DELETE: api/Products/5
-        [HttpDelete("{id}")]
+        [HttpDelete("api/Products/{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
@@ -90,7 +90,7 @@ namespace ProductAPI.Controllers
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return NoContent();  // This indicates a successful delete with no content in the response.
         }
 
         private bool ProductExists(int id)

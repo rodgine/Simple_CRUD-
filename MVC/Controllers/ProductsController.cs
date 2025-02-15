@@ -18,7 +18,6 @@ namespace MVC.Controllers
             var products = await _productService.GetProductsAsync();
             return View(products);
         }
-
         public async Task<IActionResult> Details(int id)
         {
             var product = await _productService.GetProductAsync(id);

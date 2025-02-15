@@ -2,7 +2,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold" style="color: black;">Welcome to My First C# MVC Project</h1>
+        <p class="lead">A modern CRUD application using ASP.NET Core MVC and API technology.</p>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Product Management -->
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center">
+                    <i class="fas fa-box-open fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title fw-bold">Product Management</h5>
+                    <p class="card-text">
+                        Manage product listings efficiently with full CRUD functionality. Add, edit, and delete products seamlessly.
+                    </p>
+                    <a href="@Url.Action("Index", "Product")" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Manage Products
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Developer Management -->
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-cog fa-3x text-success mb-3"></i>
+                    <h5 class="card-title fw-bold">Developer Management</h5>
+                    <p class="card-text">
+                        Keep track of developers, their roles, and contributions. Ensure smooth collaboration in projects.
+                    </p>
+                    <a href="@Url.Action("Index", "Developer")" class="btn btn-success">
+                        <i class="fas fa-users"></i> Manage Developers
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center mt-5">
+        <p>
+            Explore <a href="https://learn.microsoft.com/aspnet/core" class="text-decoration-none">ASP.NET Core documentation</a>
+            to learn more about building modern web applications.
+        </p>
+    </div>
 </div>
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

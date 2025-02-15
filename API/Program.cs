@@ -13,8 +13,11 @@ builder.Services.AddDbContext<ProductContext>(options =>
 
 var app = builder.Build();
 
-//
-// 
+// Add CORS policy
+app.UseCors(policy =>
+    policy.AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader());
 
 //app.UseHttpsRedirection();
 

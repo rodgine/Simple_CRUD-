@@ -15,7 +15,7 @@ namespace MVC.Services
             _httpClient = new HttpClient();
             _apiBaseUrl = configuration["ApiBaseUrl"];
         }
-
+        
         public async Task<List<Product>> GetProductsAsync()
         {
             var response = await _httpClient.GetStringAsync(_apiBaseUrl + "products");
